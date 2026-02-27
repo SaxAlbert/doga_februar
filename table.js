@@ -20,7 +20,7 @@ class Table{
      */
     constructor(manager,parent, HeaderCallback){
         this.#manager=manager
-        this.#tbody.createTable(parent,HeaderCallback)
+        this.#tbody=createTable(parent,HeaderCallback)
     }
     addElementCallback(callback){
         this.#manager.addElement(elem)

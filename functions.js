@@ -32,7 +32,7 @@ const createTableCell = (type, content, parent) => {
 const tbodyRenderColspan = (tbody, element) => {
     const tr = document.createElement('tr');
     tbody.appendChild(tr);
-    createTableCell('td', element, tr)
+    createTableCell('td', element.evszam, tr)
     const td2 = createTableCell('td', element.esemeny1, tr)
 
     if(element.esemeny2) {
